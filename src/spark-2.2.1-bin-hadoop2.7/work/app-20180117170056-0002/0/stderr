@@ -1,0 +1,12 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/17 17:00:59 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 2109@spark2
+18/01/17 17:00:59 INFO SignalUtils: Registered signal handler for TERM
+18/01/17 17:00:59 INFO SignalUtils: Registered signal handler for HUP
+18/01/17 17:00:59 INFO SignalUtils: Registered signal handler for INT
+18/01/17 17:01:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/17 17:01:01 WARN Utils: Your hostname, spark2 resolves to a loopback address: 127.0.1.1; using 192.168.56.102 instead (on interface enp0s3)
+18/01/17 17:01:01 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/17 17:01:01 INFO SecurityManager: Changing view acls to: dawid
+18/01/17 17:01:01 INFO SecurityManager: Changing modify acls to: dawid
+18/01/17 17:01:01 INFO SecurityManager: Changing view acls groups to: 
+18/01/17 17:01:01 INFO SecurityManager: Changing modify acls groups to:

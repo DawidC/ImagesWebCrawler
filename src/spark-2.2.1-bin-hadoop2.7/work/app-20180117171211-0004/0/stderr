@@ -1,0 +1,70 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/17 17:12:13 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 2695@spark2
+18/01/17 17:12:13 INFO SignalUtils: Registered signal handler for TERM
+18/01/17 17:12:13 INFO SignalUtils: Registered signal handler for HUP
+18/01/17 17:12:13 INFO SignalUtils: Registered signal handler for INT
+18/01/17 17:12:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/17 17:12:16 WARN Utils: Your hostname, spark2 resolves to a loopback address: 127.0.1.1; using 192.168.56.102 instead (on interface enp0s3)
+18/01/17 17:12:16 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/17 17:12:16 INFO SecurityManager: Changing view acls to: dawid
+18/01/17 17:12:16 INFO SecurityManager: Changing modify acls to: dawid
+18/01/17 17:12:16 INFO SecurityManager: Changing view acls groups to: 
+18/01/17 17:12:16 INFO SecurityManager: Changing modify acls groups to: 
+18/01/17 17:12:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dawid); groups with view permissions: Set(); users  with modify permissions: Set(dawid); groups with modify permissions: Set()
+18/01/17 17:12:17 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:44802 after 186 ms (0 ms spent in bootstraps)
+18/01/17 17:12:17 INFO SecurityManager: Changing view acls to: dawid
+18/01/17 17:12:17 INFO SecurityManager: Changing modify acls to: dawid
+18/01/17 17:12:17 INFO SecurityManager: Changing view acls groups to: 
+18/01/17 17:12:17 INFO SecurityManager: Changing modify acls groups to: 
+18/01/17 17:12:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dawid); groups with view permissions: Set(); users  with modify permissions: Set(dawid); groups with modify permissions: Set()
+18/01/17 17:12:18 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:44802 after 4 ms (0 ms spent in bootstraps)
+18/01/17 17:12:18 INFO DiskBlockManager: Created local directory at /tmp/spark-164436d3-727b-4cef-b82b-1602d90bc3f7/executor-a09cf568-8bbe-436e-be5f-783a55dbb20f/blockmgr-9c432bfc-8959-4d46-9e05-4a2e2103d96b
+18/01/17 17:12:18 INFO MemoryStore: MemoryStore started with capacity 413.9 MB
+18/01/17 17:12:19 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.56.102:44802
+18/01/17 17:12:19 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.56.102:45404
+18/01/17 17:12:19 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:45404 after 82 ms (0 ms spent in bootstraps)
+18/01/17 17:12:19 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.56.102:45404
+18/01/17 17:12:19 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+18/01/17 17:12:19 INFO Executor: Starting executor ID 0 on host 192.168.56.102
+18/01/17 17:12:19 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45678.
+18/01/17 17:12:19 INFO NettyBlockTransferService: Server created on 192.168.56.102:45678
+18/01/17 17:12:19 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/01/17 17:12:19 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 192.168.56.102, 45678, None)
+18/01/17 17:12:19 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 192.168.56.102, 45678, None)
+18/01/17 17:12:19 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 192.168.56.102, 45678, None)
+18/01/17 17:12:23 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+18/01/17 17:12:23 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/01/17 17:12:23 INFO Executor: Fetching spark://192.168.56.102:44802/files/wordcount.py with timestamp 1516205530769
+18/01/17 17:12:23 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:44802 after 8 ms (0 ms spent in bootstraps)
+18/01/17 17:12:23 INFO Utils: Fetching spark://192.168.56.102:44802/files/wordcount.py to /tmp/spark-164436d3-727b-4cef-b82b-1602d90bc3f7/executor-a09cf568-8bbe-436e-be5f-783a55dbb20f/spark-7a4b6fde-a500-483f-a065-c8173e7d846a/fetchFileTemp3375388043805220669.tmp
+18/01/17 17:12:23 INFO Utils: Copying /tmp/spark-164436d3-727b-4cef-b82b-1602d90bc3f7/executor-a09cf568-8bbe-436e-be5f-783a55dbb20f/spark-7a4b6fde-a500-483f-a065-c8173e7d846a/7664734311516205530769_cache to /home/dawid/spark/spark-2.2.1-bin-hadoop2.7/work/app-20180117171211-0004/0/./wordcount.py
+18/01/17 17:12:23 INFO TorrentBroadcast: Started reading broadcast variable 1
+18/01/17 17:12:23 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:33477 after 7 ms (0 ms spent in bootstraps)
+18/01/17 17:12:23 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.9 KB, free 413.9 MB)
+18/01/17 17:12:23 INFO TorrentBroadcast: Reading broadcast variable 1 took 156 ms
+18/01/17 17:12:23 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 13.1 KB, free 413.9 MB)
+18/01/17 17:12:25 INFO CodeGenerator: Code generated in 571.280262 ms
+18/01/17 17:12:26 INFO FileScanRDD: Reading File path: file:///home/dawid/spark/in.txt, range: 0-19596, partition values: [empty row]
+18/01/17 17:12:26 INFO CodeGenerator: Code generated in 52.24626 ms
+18/01/17 17:12:26 INFO TorrentBroadcast: Started reading broadcast variable 0
+18/01/17 17:12:26 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.3 KB, free 413.9 MB)
+18/01/17 17:12:26 INFO TorrentBroadcast: Reading broadcast variable 0 took 38 ms
+18/01/17 17:12:26 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 325.7 KB, free 413.6 MB)
+18/01/17 17:12:27 INFO PythonRunner: Times: total = 1906, boot = 1007, init = 881, finish = 18
+18/01/17 17:12:27 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2527 bytes result sent to driver
+18/01/17 17:12:27 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+18/01/17 17:12:27 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/01/17 17:12:27 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+18/01/17 17:12:27 INFO TorrentBroadcast: Started reading broadcast variable 2
+18/01/17 17:12:27 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.8 KB, free 413.6 MB)
+18/01/17 17:12:27 INFO TorrentBroadcast: Reading broadcast variable 2 took 33 ms
+18/01/17 17:12:27 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.1 KB, free 413.6 MB)
+18/01/17 17:12:27 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+18/01/17 17:12:27 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@192.168.56.102:44802)
+18/01/17 17:12:27 INFO MapOutputTrackerWorker: Got the output locations
+18/01/17 17:12:27 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+18/01/17 17:12:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 16 ms
+18/01/17 17:12:27 INFO PythonRunner: Times: total = 43, boot = -869, init = 910, finish = 2
+18/01/17 17:12:27 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 33023 bytes result sent to driver
+18/01/17 17:12:28 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+tes result sent to driver

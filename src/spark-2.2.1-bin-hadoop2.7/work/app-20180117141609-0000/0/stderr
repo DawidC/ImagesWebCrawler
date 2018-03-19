@@ -1,0 +1,246 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/17 14:16:12 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 1759@spark2
+18/01/17 14:16:12 INFO SignalUtils: Registered signal handler for TERM
+18/01/17 14:16:12 INFO SignalUtils: Registered signal handler for HUP
+18/01/17 14:16:12 INFO SignalUtils: Registered signal handler for INT
+18/01/17 14:16:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/17 14:16:14 WARN Utils: Your hostname, spark2 resolves to a loopback address: 127.0.1.1; using 192.168.56.102 instead (on interface enp0s3)
+18/01/17 14:16:14 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/17 14:16:14 INFO SecurityManager: Changing view acls to: dawid
+18/01/17 14:16:14 INFO SecurityManager: Changing modify acls to: dawid
+18/01/17 14:16:14 INFO SecurityManager: Changing view acls groups to: 
+18/01/17 14:16:14 INFO SecurityManager: Changing modify acls groups to: 
+18/01/17 14:16:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dawid); groups with view permissions: Set(); users  with modify permissions: Set(dawid); groups with modify permissions: Set()
+18/01/17 14:16:16 INFO TransportClientFactory: Successfully created connection to /192.168.56.101:40943 after 237 ms (0 ms spent in bootstraps)
+18/01/17 14:16:16 INFO SecurityManager: Changing view acls to: dawid
+18/01/17 14:16:16 INFO SecurityManager: Changing modify acls to: dawid
+18/01/17 14:16:16 INFO SecurityManager: Changing view acls groups to: 
+18/01/17 14:16:16 INFO SecurityManager: Changing modify acls groups to: 
+18/01/17 14:16:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dawid); groups with view permissions: Set(); users  with modify permissions: Set(dawid); groups with modify permissions: Set()
+18/01/17 14:16:16 INFO TransportClientFactory: Successfully created connection to /192.168.56.101:40943 after 16 ms (0 ms spent in bootstraps)
+18/01/17 14:16:17 INFO DiskBlockManager: Created local directory at /tmp/spark-c42fd6b7-0ab2-44bf-a0f7-8da65126a26d/executor-359d3ad0-dbcd-43be-afb4-b7143cb02c20/blockmgr-cc379483-4ebb-4a04-aab8-1f004a411dcf
+18/01/17 14:16:17 INFO MemoryStore: MemoryStore started with capacity 413.9 MB
+18/01/17 14:16:17 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.56.101:40943
+18/01/17 14:16:17 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.56.102:44805
+18/01/17 14:16:17 INFO TransportClientFactory: Successfully created connection to /192.168.56.102:44805 after 37 ms (0 ms spent in bootstraps)
+18/01/17 14:16:17 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.56.102:44805
+18/01/17 14:16:17 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+18/01/17 14:16:17 INFO Executor: Starting executor ID 0 on host 192.168.56.102
+18/01/17 14:16:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41111.
+18/01/17 14:16:17 INFO NettyBlockTransferService: Server created on 192.168.56.102:41111
+18/01/17 14:16:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/01/17 14:16:17 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 192.168.56.102, 41111, None)
+18/01/17 14:16:17 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 192.168.56.102, 41111, None)
+18/01/17 14:16:17 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 192.168.56.102, 41111, None)
+18/01/17 14:16:17 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+18/01/17 14:16:17 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+18/01/17 14:16:18 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/01/17 14:16:18 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/01/17 14:16:18 INFO Executor: Fetching spark://192.168.56.101:40943/files/pi.py with timestamp 1516194968400
+18/01/17 14:16:18 INFO TransportClientFactory: Successfully created connection to /192.168.56.101:40943 after 9 ms (0 ms spent in bootstraps)
+18/01/17 14:16:18 INFO Utils: Fetching spark://192.168.56.101:40943/files/pi.py to /tmp/spark-c42fd6b7-0ab2-44bf-a0f7-8da65126a26d/executor-359d3ad0-dbcd-43be-afb4-b7143cb02c20/spark-b6cc2a70-d483-459c-a80b-811355e0067c/fetchFileTemp8003677121942521617.tmp
+18/01/17 14:16:18 INFO Utils: Copying /tmp/spark-c42fd6b7-0ab2-44bf-a0f7-8da65126a26d/executor-359d3ad0-dbcd-43be-afb4-b7143cb02c20/spark-b6cc2a70-d483-459c-a80b-811355e0067c/-3210211261516194968400_cache to /home/dawid/spark/spark-2.2.1-bin-hadoop2.7/work/app-20180117141609-0000/0/./pi.py
+18/01/17 14:16:18 INFO TorrentBroadcast: Started reading broadcast variable 0
+18/01/17 14:16:19 INFO TransportClientFactory: Successfully created connection to /192.168.56.101:33741 after 9 ms (0 ms spent in bootstraps)
+18/01/17 14:16:19 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 3.0 KB, free 413.9 MB)
+18/01/17 14:16:19 INFO TorrentBroadcast: Reading broadcast variable 0 took 358 ms
+18/01/17 14:16:19 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 4.5 KB, free 413.9 MB)
+18/01/17 14:16:20 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+18/01/17 14:16:20 INFO Executor: Running task 1.1 in stage 0.0 (TID 2)
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+18/01/17 14:16:20 INFO Executor: Running task 0.1 in stage 0.0 (TID 3)
+18/01/17 14:16:20 ERROR Executor: Exception in task 0.1 in stage 0.0 (TID 3)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 ERROR Executor: Exception in task 1.1 in stage 0.0 (TID 2)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+18/01/17 14:16:20 INFO Executor: Running task 1.2 in stage 0.0 (TID 4)
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+18/01/17 14:16:20 INFO Executor: Running task 0.2 in stage 0.0 (TID 5)
+18/01/17 14:16:20 ERROR Executor: Exception in task 1.2 in stage 0.0 (TID 4)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 ERROR Executor: Exception in task 0.2 in stage 0.0 (TID 5)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+18/01/17 14:16:20 INFO Executor: Running task 1.3 in stage 0.0 (TID 6)
+18/01/17 14:16:20 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+18/01/17 14:16:20 INFO Executor: Running task 0.3 in stage 0.0 (TID 7)
+18/01/17 14:16:20 ERROR Executor: Exception in task 0.3 in stage 0.0 (TID 7)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:20 ERROR Executor: Exception in task 1.3 in stage 0.0 (TID 6)
+java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.spark.api.python.PythonWorkerFactory.startDaemon(PythonWorkerFactory.scala:163)
+	at org.apache.spark.api.python.PythonWorkerFactory.createThroughDaemon(PythonWorkerFactory.scala:89)
+	at org.apache.spark.api.python.PythonWorkerFactory.create(PythonWorkerFactory.scala:65)
+	at org.apache.spark.SparkEnv.createPythonWorker(SparkEnv.scala:117)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:128)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 14 more
+18/01/17 14:16:21 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+18/01/17 14:16:21 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown
