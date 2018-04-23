@@ -13,9 +13,8 @@ Next from solr web console <link>http://localhost:8983/solr/</link> export URLs 
 Next run <code>img_download.py</code> to download all files from crawled URLs, pack all filenames into .txt file and compress it to .tar.gz file <br>
 Finally run <code>img_recognition_tensor.py</code> to classify all crawled photos.
 <br><br>
-TODO: <ul> change paths to relative </ul>
+TODO:
 <ul> change neural network(?) </ul>
-<ul> automate running sparkler and generating .csv file </ul>
 
 
 
